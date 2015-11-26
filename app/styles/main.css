@@ -9,6 +9,11 @@ body {
   padding: 0;
 }
 
+.bordered div {
+  border: 10px solid orange;
+  background: transparent;
+}
+
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
 .marketing,

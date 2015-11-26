@@ -53,25 +53,38 @@
     <div class="container" ng-controller="MainCtrl">
         <div ng-view=""></div>
 
-        {{awesomeThings}}
+        <!--        {{awesomeThings}}-->
 
-        <div class="row">
-            <div class="col-xs-3">-</div>
-            <div class="col-xs-3">-</div>
-            <div class="col-xs-3">-</div>
+        {{count}}
+
+        <div class="row bordered" >
+            <div class="col-xs-3 btn" ng-repeat="i in [0, 1, 2]" ng-click="clickElement(i)">{{a[i].value}}&nbsp;</div>
         </div>
 
-        <div class="row">
-            <div class="col-xs-3">-</div>
-            <div class="col-xs-3">-</div>
-            <div class="col-xs-3">-</div>
+        <div class="row bordered">
+            <div class="col-xs-3 btn" ng-repeat="i in [3, 4, 5]" ng-click="clickElement(i)">{{a[i].value}}&nbsp;</div>
+        </div>
+        <div class="row bordered" >
+            <div class="col-xs-3 btn" ng-repeat="i in [6, 7, 8]" ng-click="clickElement(i)">{{a[i].value}}&nbsp;</div>
         </div>
 
-        <div class="row">
-            <div class="col-xs-3">-</div>
-            <div class="col-xs-3">-</div>
-            <div class="col-xs-3">-</div>
+        <!--<div class="row bordered">
+            <div class="col-xs-3 btn" ng-click="clickElement('00')" ng-init="count=0">{{a00}}&nbsp;</div>
+            <div class="col-xs-3 btn">{{a01}}&nbsp;</div>
+            <div class="col-xs-3 btn">{{a02}}&nbsp;</div>
         </div>
+
+        <div class="row bordered">
+            <div class="col-xs-3 btn">{{a10}}&nbsp;</div>
+            <div class="col-xs-3 btn">{{a11}}&nbsp;</div>
+            <div class="col-xs-3 btn">{{a12}}&nbsp;</div>
+        </div>
+
+        <div class="row bordered">
+            <div class="col-xs-3 btn">{{a20}}&nbsp;</div>
+            <div class="col-xs-3 btn">{{a21}}&nbsp;</div>
+            <div class="col-xs-3 btn">{{a22}}&nbsp;</div>
+        </div>-->
     </div>
 
     <div class="footer">
